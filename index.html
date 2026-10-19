@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MARIBAK Studio – Sites web, réseaux sociaux, catalogues numériques et marketing digital</title>
+<meta name="description" content="MARIBAK Studio aide les particuliers, commerces et entreprises à améliorer leur présence sur Internet : sites web, réseaux sociaux, catalogues numériques et marketing digital.">
+<meta property="og:title" content="MARIBAK Studio – Votre solution numérique sur mesure">
+<meta property="og:description" content="Sites web, réseaux sociaux, catalogues numériques et marketing digital.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1d3a2c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231d3a2c'/%3E%3Ctext x='50' y='72' font-size='64' font-weight='700' text-anchor='middle' fill='%23ffe58f' font-family='Arial'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MARIBAK Studio","slogan":"Votre solution numérique sur mesure","founder":[{"@type":"Person","name":"Marieme Sy"},{"@type":"Person","name":"Bakar Ndiaye"}]}</script>
+<style>
+:root{
+ --velvet:#1d3a2c;--deep:#10261b;--gold:#ffe58f;--olive:#6f7a22;--olive-d:#59611a;
+ --bg:#fbf7ec;--alt:#f2ecd9;--fg:#2a2118;--muted:#6a5f50;--line:#ded5bd;--card:#fffdf6;--price:#1f6b2e;--hdr:rgba(251,247,236,.96);
+ --font:"Inter",Arial,Helvetica,sans-serif;
+ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10261b;--alt:#15301f;--fg:#f3ecd7;--muted:#b7bfae;--line:#2c4a38;--card:#193423;--price:#c4e6a0;--hdr:rgba(16,38,27,.96);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10261b;--alt:#15301f;--fg:#f3ecd7;--muted:#b7bfae;--line:#2c4a38;--card:#193423;--price:#c4e6a0;--hdr:rgba(16,38,27,.96);color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.65 var(--font)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--velvet);z-index:60}
+button,input,select,textarea{font-family:var(--font)}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--olive);outline-offset:2px}
+.wrap{width:min(1100px,100% - 2.5rem);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--deep);padding:.6rem 1rem;z-index:70}
+.skip:focus{left:1rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--velvet);color:#f3ecd7}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem 0}
+.logo{display:flex;align-items:center;gap:.45rem;font:600 1.25rem var(--font);letter-spacing:.03em;background:none;border:0;color:var(--gold);cursor:pointer;padding:0}
+.oval{font:600 .6rem/1 var(--font);border:1.5px solid currentColor;border-radius:99px;padding:.22rem .5rem}
+nav ul{display:flex;gap:.2rem;list-style:none;margin:0;padding:0}
+nav button{font:400 .95rem var(--font);background:none;border:0;color:#cfdbd2;padding:.5rem .85rem;border-radius:6px;cursor:pointer}
+nav button:hover{color:#fff}
+nav button[aria-current="true"]{color:var(--gold);box-shadow:inset 0 -2px 0 var(--gold)}
+.menu{display:none;background:none;border:1px solid rgba(255,255,255,.35);border-radius:6px;width:44px;height:44px;color:#fff;cursor:pointer}
+.btn{display:inline-block;font:500 .95rem var(--font);padding:.8rem 1.5rem;border:2px solid var(--olive);border-radius:10px;cursor:pointer;text-decoration:none;background:var(--olive);color:#fff;transition:background .2s}
+.btn:hover{background:var(--olive-d);border-color:var(--olive-d)}
+.btn-gold{background:var(--gold);border-color:var(--gold);color:var(--deep)}
+.btn-gold:hover{background:#fff3c4;border-color:#fff3c4}
+.btn-out{background:none;color:var(--gold);border-color:rgba(255,229,143,.7)}
+.btn-out:hover{background:rgba(255,229,143,.12);border-color:var(--gold)}
+.btn-sm{padding:.55rem 1.1rem;font-size:.88rem}
+@media(max-width:860px){.menu{display:block}.head-cta{display:none}
+ nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--velvet);padding:.4rem 1.25rem 1rem;border-top:1px solid rgba(255,255,255,.12)}
+ nav.open{display:block}nav ul{flex-direction:column}nav button{width:100%;text-align:left;padding:.8rem}}
+.page[hidden]{display:none}
+.hero{background-color:var(--velvet);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");color:#f3ecd7;padding:clamp(3rem,8vw,6rem) 0}
+.hero .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:2.5rem;align-items:center}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+.kicker{color:var(--gold);font-weight:500;margin:0 0 1rem}
+.hero h1{font-size:clamp(2.2rem,5.4vw,4rem);font-weight:600;line-height:1.08;letter-spacing:-.02em;margin:0 0 1.1rem}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.lead{font-size:1.12rem;color:#d3ddd5;max-width:34rem;margin:0 0 1.8rem}
+.cta{display:flex;gap:.7rem;flex-wrap:wrap}
+.glance{background:var(--card);color:var(--fg);border-radius:16px;padding:1.6rem}
+.glance h2{font-size:1.1rem;font-weight:600;margin:0 0 1rem}
+.glance ul{list-style:none;margin:0 0 1.2rem;padding:0}
+.glance li{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0;border-bottom:1px solid var(--line)}
+.glance li b{font-weight:600}
+.glance li span{color:var(--price);font-weight:600;white-space:nowrap}
+.glance small{display:block;color:var(--muted);margin-bottom:1rem}
+.s{padding:clamp(3rem,7vw,5rem) 0}
+.alt{background:var(--alt)}
+.head{max-width:40rem;margin:0 0 2.2rem}
+.eyebrow{color:var(--olive);font-weight:600;font-size:.9rem;margin:0 0 .4rem}
+:root[data-theme="dark"] .eyebrow{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .eyebrow{color:var(--gold)}}
+h2.t{font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:600;line-height:1.2;margin:0 0 .7rem}
+.sub{color:var(--muted);margin:0}
+.grid{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.5rem}
+.card .n{font-weight:600;color:var(--olive);font-size:.9rem}
+:root[data-theme="dark"] .card .n{color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .card .n{color:var(--gold)}}
+.card h3{font-size:1.15rem;font-weight:600;margin:.3rem 0 .5rem}
+.card p{margin:0 0 .8rem;color:var(--muted)}
+.lk{color:var(--price);font:500 .92rem var(--font);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.step{border-top:3px solid var(--olive);padding-top:.9rem}
+.step b{display:block;font-weight:600;font-size:1.05rem;margin-bottom:.3rem}
+.step p{margin:0;color:var(--muted)}
+.band{background:var(--velvet);color:#f3ecd7;text-align:center;padding:3rem 0}
+.band h2{font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:600;margin:0 0 .6rem}
+.band p{color:#d3ddd5;margin:0 0 1.4rem}
+.band .cta{justify-content:center}
+.pagehead{background:var(--velvet);color:#f3ecd7;padding:2.8rem 0}
+.pagehead h1{font-size:clamp(1.9rem,4.4vw,2.8rem);font-weight:600;margin:0 0 .4rem;color:var(--gold)}
+.pagehead p{margin:0;color:#d3ddd5;max-width:40rem}
+.svc{display:grid;grid-template-columns:.9fr 1.1fr;gap:2rem;padding:2rem 0;border-bottom:1px solid var(--line)}
+.svc:last-child{border:0}
+.svc h2{font-size:1.5rem;font-weight:600;margin:0 0 .4rem}
+.svc .n{color:var(--olive);font-weight:600}
+.svc ul{margin:0 0 1rem;padding-left:1.1rem;color:var(--muted)}
+.svc li{margin:.25rem 0}
+@media(max-width:800px){.svc{grid-template-columns:1fr;gap:.8rem}}
+.packs{display:grid;gap:1.2rem;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));align-items:stretch}
+.pack{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--olive);border-radius:14px;padding:1.6rem;display:flex;flex-direction:column}
+.pack h3{font-size:1.4rem;font-weight:600;margin:0 0 .8rem;text-align:center;letter-spacing:.04em}
+.pack .lbl{font-size:.85rem;color:var(--muted);margin:.6rem 0 0;border-top:1px solid var(--line);padding-top:.8rem}
+.pack .pr{font-size:1.5rem;font-weight:600;color:var(--price);margin:0 0 .4rem}
+.pack .pr small{font-size:.9rem;font-weight:500}
+.pack ul{margin:0 0 .6rem;padding-left:1.1rem}
+.pack li{margin:.2rem 0}
+.pack .btn{margin-top:auto;text-align:center}
+.pack .gap{flex:1}
+.note{font-size:.9rem;color:var(--muted)}
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem}
+@media(max-width:800px){.about{grid-template-columns:1fr}}
+.person{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--olive);border-radius:12px;padding:1.1rem 1.3rem;margin-bottom:1rem}
+.person b{display:block;font-weight:600;font-size:1.1rem}
+.person span{color:var(--muted)}
+.empty{border:1px dashed var(--muted);border-radius:12px;padding:1.4rem;color:var(--muted);background:var(--card)}
+.empty b{display:block;font-weight:600;color:var(--fg);margin-bottom:.3rem}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:start}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+form{display:grid;gap:.9rem;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:clamp(1.1rem,3vw,1.8rem)}
+.row{display:grid;gap:.9rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+label{display:grid;gap:.3rem;font-weight:500;font-size:.9rem}
+input,select,textarea{font-size:1rem;font-weight:400;color:var(--fg);background:var(--bg);border:1px solid var(--muted);border-radius:8px;padding:.65rem .75rem;width:100%}
+textarea{min-height:110px;resize:vertical}
+form .btn{justify-self:start}
+#status{min-height:1.3em;font-weight:500;margin:0}
+.info{background:var(--velvet);color:#f3ecd7;border-radius:14px;padding:1.6rem}
+.info h3{margin:0 0 .6rem;font-weight:600;color:var(--gold)}
+.info p{color:#d3ddd5;margin:0 0 1rem}
+.links{display:flex;flex-direction:column;gap:.5rem}
+.links a{display:block;border:1.5px solid rgba(255,229,143,.5);border-radius:8px;padding:.6rem 1rem;text-decoration:none;font-weight:500;color:#f3ecd7}
+.links a:hover{background:rgba(255,229,143,.15)}
+footer{background:var(--deep);color:#b9c8bd;padding:2.5rem 0 1.5rem;font-size:.92rem}
+.fgrid{display:grid;gap:2rem;grid-template-columns:1.4fr 1fr 1fr}
+@media(max-width:700px){.fgrid{grid-template-columns:1fr}}
+footer h3{color:#fff;font-weight:600;font-size:1rem;margin:0 0 .6rem}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin:.3rem 0}
+footer a,footer .fl{color:#b9c8bd;text-decoration:none;background:none;border:0;padding:0;font:400 .92rem var(--font);cursor:pointer}
+footer a:hover,footer .fl:hover{color:var(--gold)}
+.copy{border-top:1px solid #26453a;margin-top:1.8rem;padding-top:1rem;font-size:.85rem}
+#wa{position:fixed;right:1rem;bottom:calc(env(safe-area-inset-bottom,0px) + 1rem);z-index:55;display:none;align-items:center;gap:.5rem;background:#25d366;color:#08331a;font-weight:600;text-decoration:none;padding:.8rem 1.1rem;border-radius:99px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+#wa.show{display:flex}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header><div class="wrap bar">
+ <button class="logo" data-go="accueil" aria-label="MARIBAK Studio, accueil">MARIBAK <span class="oval">Studio</span></button>
+ <nav id="nav" aria-label="Navigation principale"><ul id="tabs"></ul></nav>
+ <button class="btn btn-gold btn-sm head-cta" data-go="contact">Demander un devis</button>
+ <button class="menu" id="menu" aria-label="Ouvrir le menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div></header>
+
+<main id="main">
+<!-- ACCUEIL -->
+<div class="page" id="p-accueil" data-title="Accueil">
+ <section class="hero"><div class="wrap">
+  <div>
+   <p class="kicker">Votre solution numérique sur mesure</p>
+   <h1>Votre présence en ligne, <em>enfin à la hauteur</em> de votre activité.</h1>
+   <p class="lead">MARIBAK aide les particuliers, les commerces et les entreprises à mieux se montrer sur Internet et à mieux échanger avec leurs clients.</p>
+   <div class="cta"><button class="btn btn-gold" data-go="contact">Demander un devis</button><button class="btn btn-out" data-go="tarifs">Voir nos tarifs</button></div>
+  </div>
+  <aside class="glance" aria-label="Nos formules">
+   <h2>Nos formules</h2>
+   <ul><li><b>NEO</b><span>dès 50 000 FCFA</span></li><li><b>FLOW</b><span>dès 75 000 FCFA</span></li><li><b>ÉLITE</b><span>dès 130 000 FCFA</span></li></ul>
+   <small>Prix de création du site. La gestion mensuelle des réseaux sociaux s’ajoute.</small>
+   <button class="btn btn-sm" data-go="tarifs">Comparer les formules</button>
+  </aside>
+ </div></section>
+
+ <section class="s"><div class="wrap">
+  <div class="head"><p class="eyebrow">Ce que nous faisons</p><h2 class="t">Quatre services pour être vu et choisi</h2></div>
+  <div class="grid">
+   <article class="card"><span class="n">01</span><h3>Création de sites web</h3><p>Sites vitrines, cabinets médicaux, restaurants, commerces, avec prise de rendez-vous si besoin.</p><button class="lk" data-go="services">Voir le détail</button></article>
+   <article class="card"><span class="n">02</span><h3>Réseaux sociaux</h3><p>Contenus, calendrier éditorial et animation de vos pages Facebook, Instagram et TikTok.</p><button class="lk" data-go="services">Voir le détail</button></article>
+   <article class="card"><span class="n">03</span><h3>Catalogues numériques</h3><p>Vos produits avec photos et prix, à partager facilement sur WhatsApp et les réseaux.</p><button class="lk" data-go="services">Voir le détail</button></article>
+   <article class="card"><span class="n">04</span><h3>Marketing digital</h3><p>Une stratégie de communication claire et des campagnes publicitaires ciblées.</p><button class="lk" data-go="services">Voir le détail</button></article>
+  </div>
+ </div></section>
+
+ <section class="s alt"><div class="wrap">
+  <div class="head"><p class="eyebrow">Pour qui</p><h2 class="t">Une solution adaptée à votre situation</h2></div>
+  <div class="grid">
+   <div class="step"><b>Particuliers</b><p>Une présence en ligne claire pour vous présenter ou lancer votre activité.</p></div>
+   <div class="step"><b>Commerces</b><p>Vos produits visibles, un catalogue à partager, des clients qui vous trouvent.</p></div>
+   <div class="step"><b>Entreprises</b><p>Une image professionnelle et cohérente, du site web aux réseaux sociaux.</p></div>
+  </div>
+ </div></section>
+
+ <section class="s"><div class="wrap">
+  <div class="head"><p class="eyebrow">Notre façon de travailler</p><h2 class="t">Simple, du premier échange à la mise en ligne</h2></div>
+  <div class="grid">
+   <div class="step"><b>1. On discute</b><p>Vous nous parlez de votre activité et de vos objectifs.</p></div>
+   <div class="step"><b>2. On propose</b><p>Une solution adaptée et un devis clair.</p></div>
+   <div class="step"><b>3. On réalise</b><p>Nous construisons votre projet, pensé d’abord pour le téléphone.</p></div>
+   <div class="step"><b>4. On reste disponibles</b><p>Une question ? Vous savez à qui écrire.</p></div>
+  </div>
+ </div></section>
+
+ <div class="band"><div class="wrap"><h2>Parlons de votre projet</h2><p>Dites-nous ce dont vous avez besoin, nous revenons vers vous avec une proposition.</p><div class="cta"><button class="btn btn-gold" data-go="contact">Demander un devis</button></div></div></div>
+</div>
+
+<!-- SERVICES -->
+<div class="page" id="p-services" data-title="Services" hidden>
+ <div class="pagehead"><div class="wrap"><h1>Nos services</h1><p>Quatre façons d’améliorer votre présence en ligne et de mieux communiquer avec vos clients.</p></div></div>
+ <div class="wrap">
+  <div class="svc"><div><span class="n">01</span><h2>Création de sites web</h2><p>Un site clair qui présente votre activité et permet à vos clients de vous contacter en un clic.</p></div>
+   <div><ul><li>Sites vitrines</li><li>Sites de cabinets médicaux</li><li>Sites de restaurants et de commerces</li><li>Catalogues en ligne</li><li>Prise de rendez-vous</li></ul><button class="btn btn-sm" data-go="contact">Demander un devis</button></div></div>
+  <div class="svc"><div><span class="n">02</span><h2>Gestion des réseaux sociaux</h2><p>Une présence régulière et soignée, sans que vous ayez à y penser tous les jours.</p></div>
+   <div><ul><li>Création de contenus et de visuels</li><li>Calendrier éditorial</li><li>Animation Facebook, Instagram et TikTok</li><li>Modération</li><li>Analyse des performances</li></ul><button class="btn btn-sm" data-go="contact">Demander un devis</button></div></div>
+  <div class="svc"><div><span class="n">03</span><h2>Catalogues numériques</h2><p>Montrez vos produits simplement et envoyez-les à vos clients en un lien.</p></div>
+   <div><ul><li>Présentation des produits avec photos et prix</li><li>Liens interactifs</li><li>Partage facile sur WhatsApp et les réseaux sociaux</li></ul><button class="btn btn-sm" data-go="contact">Demander un devis</button></div></div>
+  <div class="svc"><div><span class="n">04</span><h2>Marketing digital et stratégie</h2><p>Une direction claire pour que votre communication vous apporte des clients.</p></div>
+   <div><ul><li>Stratégie de communication</li><li>Optimisation de votre présence en ligne</li><li>Campagnes publicitaires ciblées</li></ul><button class="btn btn-sm" data-go="contact">Demander un devis</button></div></div>
+ </div>
+</div>
+
+<!-- TARIFS -->
+<div class="page" id="p-tarifs" data-title="Tarifs" hidden>
+ <div class="pagehead"><div class="wrap"><h1>Nos tarifs</h1><p>Trois formules qui associent la création de votre site et la gestion mensuelle de vos réseaux sociaux.</p></div></div>
+ <section class="s"><div class="wrap">
+  <div class="packs">
+   <article class="pack"><h3>NEO</h3>
+    <p class="lbl">Création du site</p><p class="pr">50 000 FCFA</p>
+    <ul><li>Site vitrine</li><li>Design personnalisé</li><li>Adapté au téléphone</li><li>Lien WhatsApp</li><li>Formulaire de contact</li><li>Référencement de base (hors pack)</li></ul>
+    <p class="lbl">Gestion mensuelle</p><p class="pr">30 000 <small>FCFA / mois</small></p>
+    <ul><li>Gestion d’1 réseau</li><li>Conseil marketing</li><li>5 posts</li></ul>
+    <div class="gap"></div><button class="btn" data-go="contact" data-pack="Pack NEO">Choisir NEO</button></article>
+   <article class="pack"><h3>FLOW</h3>
+    <p class="lbl">Création du site</p><p class="pr">75 000 FCFA</p>
+    <ul><li>Site web avec lien WhatsApp</li><li>Design personnalisé</li><li>Adapté au téléphone</li><li>Formulaire de contact</li><li>Google Maps</li><li>Maintenance</li><li>Référencement de base (hors pack)</li></ul>
+    <p class="lbl">Gestion mensuelle</p><p class="pr">60 000 <small>FCFA / mois</small></p>
+    <ul><li>Gestion de 2 réseaux sociaux</li><li>Stratégie marketing</li><li>Photo</li><li>10 posts</li></ul>
+    <div class="gap"></div><button class="btn" data-go="contact" data-pack="Pack FLOW">Choisir FLOW</button></article>
+   <article class="pack"><h3>ÉLITE</h3>
+    <p class="lbl">Création du site</p><p class="pr">130 000 FCFA</p>
+    <ul><li>Site pro</li><li>Design premium</li><li>Version mobile</li><li>Google Maps</li><li>Application d’entreprise</li><li>Catalogue physique (optionnel)</li><li>Maintenance</li><li>Référencement de base (hors pack)</li></ul>
+    <p class="lbl">Gestion mensuelle</p><p class="pr">85 000 <small>FCFA / mois</small></p>
+    <ul><li>3 réseaux</li><li>Création de contenu</li><li>Consulting</li><li>Photos pro</li><li>15 posts</li></ul>
+    <div class="gap"></div><button class="btn" data-go="contact" data-pack="Pack ÉLITE">Choisir ÉLITE</button></article>
+  </div>
+  <p class="note" style="margin-top:1.4rem">Un besoin différent (catalogue numérique, marketing digital, projet sur mesure) ? Écrivez-nous, nous vous proposerons un devis adapté.</p>
+ </div></section>
+</div>
+
+<!-- A PROPOS -->
+<div class="page" id="p-apropos" data-title="À propos" hidden>
+ <div class="pagehead"><div class="wrap"><h1>À propos</h1><p>Une jeune entreprise digitale, avec des interlocuteurs que vous connaissez.</p></div></div>
+ <section class="s"><div class="wrap about">
+  <div><h2 class="t">Qui est derrière MARIBAK ?</h2><p>MARIBAK Studio est lancée par Marieme Sy et Bakar Ndiaye. Notre métier : aider les particuliers, les commerces et les entreprises à améliorer leur présence sur Internet et à mieux communiquer avec leurs clients.</p><p>Quand vous nous écrivez, vous parlez directement à l’un de nous deux. Nous prenons le temps de comprendre votre activité avant de vous proposer quoi que ce soit.</p></div>
+  <div><div class="person"><b>Marieme Sy</b><span>Cofondatrice</span></div><div class="person"><b>Bakar Ndiaye</b><span>Cofondateur</span></div></div>
+ </div></section>
+ <section class="s alt"><div class="wrap">
+  <div class="head"><p class="eyebrow">Réalisations et avis</p><h2 class="t">Du concret, rien que du vrai</h2></div>
+  <div id="projects" class="grid"></div>
+  <div id="reviews" class="grid" style="margin-top:1.2rem"></div>
+ </div></section>
+</div>
+
+<!-- CONTACT -->
+<div class="page" id="p-contact" data-title="Contact" hidden>
+ <div class="pagehead"><div class="wrap"><h1>Devis et contact</h1><p>Dites-nous ce dont vous avez besoin, nous revenons vers vous.</p></div></div>
+ <section class="s"><div class="wrap contact">
+  <form id="quote" novalidate>
+   <div class="row"><label>Votre nom<input name="nom" autocomplete="name" required></label><label>Entreprise (facultatif)<input name="entreprise" autocomplete="organization"></label></div>
+   <label>Ce qui vous intéresse<select name="service" id="service" required><option value="">Choisir…</option><option>Pack NEO</option><option>Pack FLOW</option><option>Pack ÉLITE</option><option>Création de site web</option><option>Gestion des réseaux sociaux</option><option>Catalogue numérique</option><option>Marketing digital et stratégie</option><option>Je ne sais pas encore</option></select></label>
+   <label>Votre projet<textarea name="message" required placeholder="Votre activité, ce que vous attendez, vos délais…"></textarea></label>
+   <button class="btn" type="submit">Envoyer ma demande</button>
+   <p id="status" role="status" aria-live="polite"></p>
+   <p class="note">Ce site ne garde aucune donnée : votre message s’ouvre dans WhatsApp ou votre application e-mail, il ne reste qu’à l’envoyer.</p>
+  </form>
+  <aside class="info"><h3>Nous joindre</h3><p>Une question avant de vous lancer ? Écrivez-nous.</p><div class="links" id="links"></div></aside>
+ </div></section>
+</div>
+</main>
+
+<footer><div class="wrap">
+ <div class="fgrid">
+  <div><button class="logo" data-go="accueil" aria-label="Accueil">MARIBAK <span class="oval">Studio</span></button><p style="margin:.8rem 0 0;max-width:22rem">Votre solution numérique sur mesure.</p></div>
+  <div><h3>Navigation</h3><ul id="fnav"></ul></div>
+  <div><h3>Contact</h3><ul id="fcontact"></ul></div>
+ </div>
+ <div class="copy">© <span id="yr"></span> MARIBAK Studio. Tous droits réservés.</div>
+</div></footer>
+<a id="wa" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.3z"/></svg>WhatsApp</a>
+
+<script>
+/* ===== À PERSONNALISER : renseignez vos vraies informations ===== */
+var CONFIG = {
+  whatsapp: "",   // numéro international sans + ni espaces, ex. "221770000000"
+  email: "",      // ex. "contact@maribak.com"
+  instagram: "",  // lien complet, ex. "https://instagram.com/maribakstudio"
+  facebook: "",
+  tiktok: "",
+  linkedin: "",
+  projects: [],   // { titre: "…", type: "Site web", description: "…", lien: "https://…" }
+  reviews: []     // { texte: "…", auteur: "Prénom Nom", role: "Entreprise" } (uniquement de vrais avis)
+};
+/* ================================================================= */
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+  function link(label,href){var a=el("a","",label);a.href=href;if(href.indexOf("http")===0){a.target="_blank";a.rel="noopener"}return a}
+  $("#yr").textContent=new Date().getFullYear();
+
+  var C=[["WhatsApp",CONFIG.whatsapp?"https://wa.me/"+CONFIG.whatsapp:""],["E-mail",CONFIG.email?"mailto:"+CONFIG.email:""],["Instagram",CONFIG.instagram],["Facebook",CONFIG.facebook],["TikTok",CONFIG.tiktok],["LinkedIn",CONFIG.linkedin]].filter(function(c){return c[1]});
+  C.forEach(function(c){$("#links").appendChild(link(c[0],c[1]));var li=el("li");li.appendChild(link(c[0],c[1]));$("#fcontact").appendChild(li)});
+  if(!C.length){$("#links").appendChild(el("p","","Les coordonnées s’afficheront ici dès qu’elles seront renseignées."));$("#fcontact").appendChild(el("li","","Coordonnées bientôt disponibles"))}
+  if(CONFIG.whatsapp){var w=$("#wa");w.href="https://wa.me/"+CONFIG.whatsapp;w.classList.add("show")}
+
+  var P=$("#projects");
+  if(!CONFIG.projects.length){var e=el("div","empty");e.style.gridColumn="1/-1";e.appendChild(el("b","","Nos premières réalisations arrivent bientôt"));e.appendChild(el("span","","Nous ne présentons que de vrais projets. Vous voulez faire partie des premiers ? Parlons du vôtre."));P.appendChild(e)}
+  else CONFIG.projects.forEach(function(p){var c=el("article","card");c.appendChild(el("span","n",p.type||""));c.appendChild(el("h3","",p.titre));c.appendChild(el("p","",p.description||""));if(p.lien)c.appendChild(link("Voir le projet →",p.lien));P.appendChild(c)});
+  var R=$("#reviews");
+  if(!CONFIG.reviews.length){var e2=el("div","empty");e2.style.gridColumn="1/-1";e2.appendChild(el("b","","Les avis de nos clients seront publiés ici"));e2.appendChild(el("span","","Uniquement de vrais témoignages, avec l’accord de nos clients."));R.appendChild(e2)}
+  else CONFIG.reviews.forEach(function(r){var c=el("figure","card");c.style.margin="0";c.appendChild(el("blockquote","",r.texte)).style.margin="0 0 .8rem";c.appendChild(el("figcaption","",r.auteur+(r.role?" – "+r.role:"")));R.appendChild(c)});
+
+  $("#quote").addEventListener("submit",function(ev){
+    ev.preventDefault();var f=ev.target,s=$("#status");
+    var n=f.nom.value.trim(),sv=f.service.value,m=f.message.value.trim();
+    if(!n||!sv||!m){s.textContent="Merci de renseigner votre nom, votre choix et votre projet.";return}
+    var txt="Bonjour MARIBAK Studio,\nJe suis "+n+(f.entreprise.value.trim()?" ("+f.entreprise.value.trim()+")":"")+".\nIntérêt : "+sv+"\nProjet : "+m;
+    if(CONFIG.whatsapp){window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(txt),"_blank","noopener");s.textContent="Merci ! WhatsApp s’ouvre avec votre message."}
+    else if(CONFIG.email){location.href="mailto:"+CONFIG.email+"?subject="+encodeURIComponent("Demande de devis – "+sv)+"&body="+encodeURIComponent(txt);s.textContent="Merci ! Votre application e-mail s’ouvre."}
+    else{s.textContent="Le formulaire n’est pas encore relié : ajoutez votre numéro WhatsApp ou votre e-mail dans CONFIG."}
+  });
+
+  var pages=[].slice.call(document.querySelectorAll(".page")),tb={};
+  pages.forEach(function(p){
+    var id=p.id.slice(2);if(id==="accueil")return;
+    var li=el("li"),b=el("button","",p.dataset.title);b.type="button";b.setAttribute("data-go",id);li.appendChild(b);$("#tabs").appendChild(li);tb[id]=b;
+    var l2=el("li"),b2=el("button","fl",p.dataset.title);b2.type="button";b2.setAttribute("data-go",id);l2.appendChild(b2);$("#fnav").appendChild(l2);
+  });
+  function show(id,silent){
+    if(!$("#p-"+id))id="accueil";
+    pages.forEach(function(p){p.hidden=p.id!=="p-"+id});
+    Object.keys(tb).forEach(function(k){tb[k].setAttribute("aria-current",k===id)});
+    document.title=(id==="accueil"?"MARIBAK Studio – Sites web, réseaux sociaux, catalogues numériques et marketing digital":$("#p-"+id).dataset.title+" – MARIBAK Studio");
+    $("#nav").classList.remove("open");$("#menu").setAttribute("aria-expanded","false");
+    window.scrollTo(0,0);
+    if(!silent){try{history.replaceState(null,"","#"+id)}catch(x){}}
+  }
+  document.addEventListener("click",function(e){
+    var t=e.target.closest("[data-go]");if(!t)return;
+    if(t.dataset.pack)$("#service").value=t.dataset.pack;
+    show(t.getAttribute("data-go"));
+  });
+  $("#menu").onclick=function(){var o=$("#nav").classList.toggle("open");this.setAttribute("aria-expanded",o)};
+  show((location.hash||"").slice(1)||"accueil",true);
+})();
+</script>
+</body>
+</html>
